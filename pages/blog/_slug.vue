@@ -1,8 +1,8 @@
 <template>
-  <main class="post individual">
+  <main class="post individual max-w-5xl mx-auto px-12">
     <h1>{{ post.title.rendered }}</h1>
     <small class="date">{{ post.date | dateformat }}</small>
-    <section v-html="post.content.rendered"></section>
+    <section v-html="post.content.rendered" class="prose"></section>
   </main>
 </template>
 
@@ -28,22 +28,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-main.post {
-  margin: 60px auto 50px;
-  max-width: 800px;
-  padding: 0 30px 70px;
-}
-
-h1 {
-  color: black;
-  font-size: 40px;
-}
-
-section {
-  color: #444;
-}
-
-.date {
-  text-align: center;
-}
+ p {
+   @apply my-4;
+ }
 </style>
