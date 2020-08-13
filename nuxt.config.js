@@ -47,27 +47,11 @@ export default {
   buildModules: [
     '@nuxtjs/tailwindcss',
     '@nuxtjs/style-resources',
-    '@aceforth/nuxt-optimized-images',
   ],
   styleResources: {
     scss: [
       '~assets/scss/_variables.scss',
     ]
-  },
-  optimizedImages: {
-    optimizeImages: true,
-    optimizeImagesInDev: false,
-    inlineImageLimit: -1,
-    handleImages: ['jpeg', 'png', 'svg', 'gif'],
-    defaultImageLoader: 'img-loader',
-    mozjpeg: {
-      quality: 85
-    },
-    optipng: false,
-    pngquant: {
-      speed: 7,
-      quality: [0.65, 0.8]
-    }
   },
   tailwindcss: {
     exposeConfig: true
